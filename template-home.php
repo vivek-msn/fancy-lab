@@ -110,7 +110,16 @@ get_header(); ?>
 										echo $regular;
 										?>
 									</span>
+									<?php if( !empty( $sale ) ): ?>
+										<span class="sale">
+											<?php
+											echo $currency;
+											echo $sale;
+											?>
+										</span>
+									<?php endif; ?>
 								</div>
+								<a href="<?php echo esc_url( '?add-to-cart=' . $deal ); ?>" class="add-to-cart">Add to Cart</a>
 							</div>
 					    </div>
 					</div>
