@@ -94,7 +94,11 @@ get_header(); ?>
 								<?php echo get_the_post_thumbnail( $deal, 'large',array( 'class' => 'img-fluid' ) ); ?>
 							</div>
 							<div class="deal-desc col-md-4 col-12 mr-auto text-centre">
-
+								<?php if( !empty( $sale ) ): ?>
+									<span class="discount">
+										<?php echo $discount_percentage . '% OFF'; ?>
+									</span>
+								<?php endif; ?>
 							</div>
 					    </div>
 					</div>
