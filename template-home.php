@@ -99,6 +99,9 @@ get_header(); ?>
 										<?php echo $discount_percentage . '% OFF'; ?>
 									</span>
 								<?php endif; ?>
+								<h3>
+									<a href="<?php echo get_permalink( $deal ); ?>"><?php echo get_the_title( $deal ); ?></a>
+								</h3>
 							</div>
 					    </div>
 					</div>
