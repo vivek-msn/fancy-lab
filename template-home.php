@@ -102,6 +102,15 @@ get_header(); ?>
 								<h3>
 									<a href="<?php echo get_permalink( $deal ); ?>"><?php echo get_the_title( $deal ); ?></a>
 								</h3>
+								<p><?php echo get_the_excerpt( $deal ); ?></p>
+								<div class="prices">
+									<span class="regular">
+										<?php
+										echo $currency;
+										echo $regular;
+										?>
+									</span>
+								</div>
 							</div>
 					    </div>
 					</div>
