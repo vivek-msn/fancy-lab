@@ -24,7 +24,7 @@ get_header();
 
 								// Load posts loop
 								while( have_posts() ): the_post();
-									get_template_parts( 'template-parts/content' );
+									get_template_part( 'template-parts/content' );
 								endwhile;
 
 								// We're using numeric page navigation here.
