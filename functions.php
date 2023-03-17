@@ -128,4 +128,13 @@ function fancy_lab_sidebars(){
 		'before_title'	=> '<h4 class="widget-title">',
 		'after_title'	=> '</h4>',
 	) );
+	register_sidebar( array(
+		'name'			=> 'Sidebar Shop',
+		'id'			=> 'fancy-lab-sidebar-shop',
+		'description'	=> 'Drag and drop your widgets here',
+		'before_widget' => '<div id="%1$s" class="widget %2$s widget-wrapper">',
+		'after_widget'	=> '</div>',
+		'before_title'	=> '<h4 class="widget-title">',
+		'after_title'	=> '</h4>',
+	) );
 }
